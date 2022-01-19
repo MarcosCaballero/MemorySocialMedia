@@ -101,7 +101,9 @@ const Form = (props) => {
           label="tags"
           fullWidth
           value={postData.tags}
-          onChange={handlerChange}
+          onChange={(e) =>
+            setPostData({ ...postData, tags: e.target.value.splice(",") })
+          }
         />
         <div className={classes.fileinput}>
           <FileBase
