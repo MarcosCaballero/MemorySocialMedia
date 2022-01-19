@@ -4,7 +4,7 @@ export default makeStyles({
   media: {
     height: 0,
     paddingTop: "56.25%",
-    backgroundColor: "rgba(0, 0, 0, 0.41)",
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
     backgroundBlendMode: "darken",
     backgroundSize: "contain",
   },
@@ -19,7 +19,8 @@ export default makeStyles({
     flexDirection: "column",
     justifyContent: "space-between",
     borderRadius: "15px",
-    height: "100%",
+    height: "95%",
+    margin: "20px",
     position: "relative",
   },
   overlay: {
