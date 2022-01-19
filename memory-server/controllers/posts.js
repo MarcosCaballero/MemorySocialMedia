@@ -62,10 +62,10 @@ export const likePost = async (req, res) => {
       .status(404)
       .json({ message: "No se econtro ningun post con ese id" });
   } else {
-    const post = await postMessage.findById(_id);
+    const post = await PostMessage.findById(_id);
 
-    const updatedPOSt = await PostMessage.findByIdAndUpdate(
-      id,
+    const updatedPost = await PostMessage.findByIdAndUpdate(
+      _id,
       {
         likeCount: post.likeCount + 1,
       },

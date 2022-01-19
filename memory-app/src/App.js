@@ -15,7 +15,11 @@ const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getPosts());
+    if (!currentId) {
+      dispatch(getPosts());
+    } else {
+      return;
+    }
   }, [currentId, dispatch]);
 
   return (

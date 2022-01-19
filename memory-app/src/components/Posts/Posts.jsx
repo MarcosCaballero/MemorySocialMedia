@@ -12,7 +12,7 @@ const Posts = (props) => {
 
   const posts = useSelector((state) => state.posts);
 
-  console.log(posts);
+  console.table(posts);
 
   return !posts.length ? (
     <CircularProgress />
